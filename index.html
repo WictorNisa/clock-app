@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Clock App</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="quote-div">
+        <div class="quote-container">
+          <h2 class="quote-text" id="quote"></h2>
+          <p class="quote-author" id="author"></p>
+        </div>
+        <img src="img/refresh.png" alt="" class="refresh-button" id="refresh" />
+      </div>
+
+      <div class="main-wrap">
+        <!-- <img
+          src="starter-code/assets/desktop/icon-sun.svg"
+          alt="image of a sun or moon"
+          class="weather-img"
+        /> -->
+        <div class="greeting-div">
+          <h3 id="greeting">Good Morning</h3>
+        </div>
+        <div class="time-div">
+          <h1 class="time" id="time-text"></h1>
+          <p class="time-zone" id="time-zone-text"></p>
+        </div>
+        <div class="location-div">
+          <h2 class="location" id="location-h2"></h2>
+        </div>
+      </div>
+      <div class="button-div">
+        <button class="toggle-info" id="toggleButton">
+            <p id="toggleText">More</p>
+            <div class="img-div">
+              <img src="img/down_7356260.png" alt="" id="arrowDown" class="visible" />
+              <img src="img/up-arrow_748030.png" alt="" id="arrowUp" class="hidden" />
+            </div>
+          </button>
+      </div>
+
+      <section class="information-div">
+        <div class="inner-wrap">
+          <div class="info-contain">
+            <p class="info-p">Current timezone:</p>
+            <p class="timezone-p" id="timezoneLocation"></p>
+          </div>
+
+          <div class="info-contain">
+            <p class="info-p">Day of the year:</p>
+            <p class="day-of-year-p" id="dayOfYear"></p>
+          </div>
+
+          <div class="info-contain">
+            <p class="info-p">Day of the week:</p>
+            <p class="day-of-the-week-p" id="dayOfWeek"></p>
+          </div>
+
+          <div class="info-contain">
+            <p class="info-p">Week number</p>
+            <p class="week-number-p" id="weekNumber"></p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="app.js"></script>
+  <!-- Attributes:  -->
+  <!-- Photo by <a href="https://unsplash.com/@lucabravo?utm_content=creditCopyText&utm_
+medium=referral&utm_source=unsplash">Luca Bravo</a> on <a href="https://unsplash.com/photos
+/body-of-water-surrounded-by-pine-trees-during-daytime-ESkw2ayO2As?utm_content=creditCopyText&utm
+_medium=referral&utm_source=unsplash">Unsplash</a> -->
+  <!-- <a href="https://www.freepik.com/icon/up-arrow_748030#fromView=search&term=arrow+up&page=1&position=24&track=ais">Icon by Freepik</a> -->
+  <!-- <a href="https://www.freepik.com/icon/down_7356260#fromView=search&term=arrow&page=1&position=25&track=ais&uuid=cb05398e-ab49-42de-b946-b9471ab28a6f">Icon by ambar</a> -->
+  <!-- <a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Refresh icons created by Arkinasi - Flaticon</a> -->
+</html>
