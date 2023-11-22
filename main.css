@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Oxygen", sans-serif;
-  letter-spacing: 1px;
+  
 }
 
 .hero {
@@ -14,6 +14,7 @@
   height: 100vh;
   width: 100vw;
   margin: auto;
+  border: 1px solid white;
 }
 
 .quote-div {
@@ -72,6 +73,7 @@
   text-transform: uppercase;
   font-size: 1.5em;
   margin: auto;
+  letter-spacing: .2em;
 }
 
 .time-div {
@@ -105,6 +107,7 @@
   text-align: left;
   font-size: 1em;
   margin: 0.5em auto auto 1em;
+  letter-spacing: .2em;
 }
 
 .toggle-info {
